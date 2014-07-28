@@ -7,7 +7,9 @@
 @import "variables";
 
 $froggreen: #668134;
+$frogblack: #000000;
 $frogsans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 
 @mixin froglinks($color) {
   display: block;
@@ -26,7 +28,7 @@ h2 {
 }
 
 .above-header {
-  background: #000000;
+  background: $frogblack;
 }
 
 #page {
@@ -112,4 +114,11 @@ section.content-right {
     @extend h2;
     margin-bottom: 12px;
   }
+}
+
+footer {
+  clear: both;
+  background: $frogblack;
+  padding: 20px;
+  color: white;
 }

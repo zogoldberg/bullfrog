@@ -65,7 +65,7 @@ h2, section.content-right h3 {
 }
 
 .above-header {
-  background: #000000;
+  background: black;
 }
 
 #page {
@@ -151,4 +151,11 @@ section.content-right article p {
 }
 section.content-right h3 {
   margin-bottom: 12px;
+}
+
+footer {
+  clear: both;
+  background: black;
+  padding: 20px;
+  color: white;
 }
