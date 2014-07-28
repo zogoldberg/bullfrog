@@ -6,6 +6,31 @@
 @import "compass/reset";
 @import "variables";
 
-body {
-  // background: red;
+$froggreen: #668134;
+
+.above-header {
+  background: #000000;
+}
+
+#main-nav {
+  a {
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 24px 0 24px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+header#top {
+  background: $froggreen;
+  padding: 50px 0;
+  .logo a {
+    font-size: 72px;
+    color: white;
+    text-decoration: none;
+  }
 }

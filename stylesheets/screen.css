@@ -57,3 +57,28 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
+
+.above-header {
+  background: #000000;
+}
+
+#main-nav a {
+  color: white;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 14px;
+  padding: 0 24px 0 24px;
+}
+#main-nav a:hover {
+  text-decoration: underline;
+}
+
+header#top {
+  background: #668134;
+  padding: 50px 0;
+}
+header#top .logo a {
+  font-size: 72px;
+  color: white;
+  text-decoration: none;
+}
