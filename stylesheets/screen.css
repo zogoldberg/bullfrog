@@ -57,7 +57,3 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
-
-header {
-  background: #668134;
-}
