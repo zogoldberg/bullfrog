@@ -6,11 +6,7 @@
 @import "compass/reset";
 @import "variables";
 
-$froggreen: #668134;
-$frogblack: #000000;
-$frogsans: Arial, "Helvetica Neue", Helvetica, sans-serif;
-
-
+// Mixins
 @mixin froglinks($color) {
   display: block;
   color: $color;
@@ -21,6 +17,14 @@ $frogsans: Arial, "Helvetica Neue", Helvetica, sans-serif;
   }
 }
 
+// Placeholder selectors
+%quarter-col {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
+}
+
+// Main styles
 h2 {
   font-size: 20px;
   color: $froggreen;
@@ -76,12 +80,6 @@ article {
   p {
     font-family: $frogsans;
   }
-}
-
-%quarter-col {
-  margin: 0 24px;
-  width: 267px;
-  float: left;
 }
 
 section.content-center,
