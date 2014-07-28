@@ -79,11 +79,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 header#top {
-  padding: 50px 0;
+  padding: 50px 24px;
   background: #668134 url("../images/bullfrog-header.png") no-repeat right center;
+  margin-bottom: 48px;
 }
 header#top .logo a {
   font-size: 72px;
   color: white;
   text-decoration: none;
+}
+
+article {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+article h1 {
+  font-size: 36px;
+  color: #668134;
+  margin: 24px 0;
 }
