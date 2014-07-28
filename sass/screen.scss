@@ -7,6 +7,17 @@
 @import "variables";
 
 $froggreen: #668134;
+$frogsans: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+@mixin froglinks($color) {
+  display: block;
+  color: $color;
+  text-decoration: none;
+  margin-bottom: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 h2 {
   font-size: 20px;
@@ -61,7 +72,7 @@ article {
     margin: 24px 0;
   }
   p {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: $frogsans;
   }
 }
 
@@ -74,4 +85,18 @@ article {
 section.content-center,
 section.content-right {
   @extend %quarter-col;
+  a {
+    @include froglinks($froggreen);
+  }
+}
+
+section.content-center {
+  ul {
+    font-family: $frogsans;
+    li {
+      a {
+        @include froglinks($froggreen);
+      }
+    }
+  }
 }
