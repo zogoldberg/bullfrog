@@ -100,3 +100,16 @@ section.content-center {
     }
   }
 }
+
+section.content-right {
+  article {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  h3 {
+    @extend h2;
+    margin-bottom: 12px;
+  }
+}
