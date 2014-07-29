@@ -8,84 +8,116 @@
 @import "compass/reset";
 @import "variables";
 
+@mixin froglinks($color) {
+  display: block;
+  color: $color;
+  text-decoration: none;
+  margin-bottom: 24px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Placeholder selectors
+%quarter-col {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
+}
+
+// Main styles
+h2 {
+  font-size: 20px;
+  color: $bfgreen;
+  margin: 24px 0;
+}
+
 .above-header {
-	background: $bfblack;
+  background: $bfblack;
 }
 
 #page {
-	max-width: 1225px;
-	margin: 0 auto;
-}
-article {
-	font-size: 16px;
-	line-height: 27px;
-	h1 {
-	font-size: 36px;
-	font-family: Georgia;
-	color: $bfgreen;
-	}
-}
-
-.article-title {
-	left: 25px;
-	top: 260px;
-}
-
-div nav span {
-	line-height: 40px;
-	height: 40px;
-	width: 80px;
-	padding-left: 15px;
-	font-weight: normal;
+  max-width: 1225px;
+  margin: 0 auto;
 }
 
 #main-nav {
-	a {
-		color: white;
-		text-decoration: none;
-		font-family: Georgia;
-		line-height: 40px;
-		font-size: 14px;
-		padding: 0 24px 0 24px;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-}
-
-.logo {
-	a {
-		left: 20px;
-		top: 84px;
-		position: absolute;
-		color: white;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-	font-size: 72px;
-	font-family: Georgia;
-	color: white;
-	
-	}
+  a {
+    color: white;
+    text-decoration: none;
+    line-height: 40px;
+    font-size: 14px;
+    padding: 0 24px 0 24px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 header#top {
-	background: $bfgreen url("../images/bullfrog-header.png") no-repeat right center;
-	width: 1225px;
-	height: 175px;
-	margin-bottom: 48px;
+  padding: 50px 24px;
+  background: $bfgreen url("../images/bullfrog-header.png") no-repeat right center;
+  margin-bottom: 48px;
+  .logo a {
+    font-size: 72px;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 #content {
-	width: 578px;
-	float: left;
+  width: 578px;
+  float: left;
+}
+
+article {
+  font-size: 16px;
+  line-height: 27px;
+  h1 {
+    font-size: 36px;
+    color: $bfgreen;
+    margin: 24px 0;
+  }
+  p {
+    font-family: $bfsans;
+  }
+}
+
+section.content-center,
+section.content-right {
+  @extend %quarter-col;
+  a {
+    @include froglinks($bfgreen);
+  }
+}
+
+section.content-center {
+  ul {
+    font-family: $bfsans;
+    li {
+      a {
+        @include froglinks($bfgreen);
+      }
+    }
+  }
+}
+
+section.content-right {
+  article {
+    p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+  h3 {
+    @extend h2;
+    margin-bottom: 12px;
+  }
 }
 
 footer {
-	clear: both;
-	color: white;
-	padding: 20px;
-	background: $bfblack;
-
+  clear: both;
+  background: $bfblack;
+  padding: 20px;
+  color: white;
 }
