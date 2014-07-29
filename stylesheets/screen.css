@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /*this gets rid of all the browser defaults; sets to 0*/
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, section.content-right h3, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -59,6 +59,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+section.content-center,
+section.content-right {
+  margin: 0 24px;
+  width: 267px;
+  float: left;
+}
+
+h2, section.content-right h3 {
+  font-size: 20px;
+  color: #668134;
+  margin: 24px 0;
+}
+
 .above-header {
   background: black;
 }
@@ -68,33 +81,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin: 0 auto;
 }
 
-article {
-  font-size: 16px;
-  line-height: 27px;
-}
-article h1 {
-  font-size: 36px;
-  font-family: Georgia;
-  color: #668134;
-}
-
-.article-title {
-  left: 25px;
-  top: 260px;
-}
-
-div nav span {
-  line-height: 40px;
-  height: 40px;
-  width: 80px;
-  padding-left: 15px;
-  font-weight: normal;
-}
-
 #main-nav a {
   color: white;
   text-decoration: none;
-  font-family: Georgia;
   line-height: 40px;
   font-size: 14px;
   padding: 0 24px 0 24px;
@@ -103,25 +92,15 @@ div nav span {
   text-decoration: underline;
 }
 
-.logo a {
-  left: 20px;
-  top: 84px;
-  position: absolute;
+header#top {
+  padding: 50px 24px;
+  background: #668134 url("../images/bullfrog-header.png") no-repeat right center;
+  margin-bottom: 48px;
+}
+header#top .logo a {
+  font-size: 72px;
   color: white;
   text-decoration: none;
-  font-size: 72px;
-  font-family: Georgia;
-  color: white;
-}
-.logo a:hover {
-  text-decoration: underline;
-}
-
-header#top {
-  background: #668134 url("../images/bullfrog-header.png") no-repeat right center;
-  width: 1225px;
-  height: 175px;
-  margin-bottom: 48px;
 }
 
 #content {
@@ -129,9 +108,55 @@ header#top {
   float: left;
 }
 
+article {
+  font-size: 16px;
+  line-height: 27px;
+}
+article h1 {
+  font-size: 36px;
+  color: #668134;
+  margin: 24px 0;
+}
+article p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+section.content-center a,
+section.content-right a {
+  display: block;
+  color: #668134;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+section.content-center a:hover,
+section.content-right a:hover {
+  text-decoration: underline;
+}
+
+section.content-center ul {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+section.content-center ul li a {
+  display: block;
+  color: #668134;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+section.content-center ul li a:hover {
+  text-decoration: underline;
+}
+
+section.content-right article p {
+  font-size: 14px;
+  line-height: 20px;
+}
+section.content-right h3 {
+  margin-bottom: 12px;
+}
+
 footer {
   clear: both;
-  color: white;
-  padding: 20px;
   background: black;
+  padding: 20px;
+  color: white;
 }
