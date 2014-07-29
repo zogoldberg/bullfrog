@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -8,6 +9,12 @@
 @import "compass/reset";
 @import "variables";
 
+=======
+@import "compass/reset";
+@import "variables";
+
+// Mixins
+>>>>>>> upstream/master
 @mixin froglinks($color) {
   display: block;
   color: $color;
@@ -28,16 +35,28 @@
 // Main styles
 h2 {
   font-size: 20px;
+<<<<<<< HEAD
   color: $bfgreen;
+=======
+  color: $froggreen;
+>>>>>>> upstream/master
   margin: 24px 0;
 }
 
 .above-header {
+<<<<<<< HEAD
   background: $bfblack;
 }
 
 #page {
   max-width: 1225px;
+=======
+  background: $frogblack;
+}
+
+#page {
+  width: 1225px;
+>>>>>>> upstream/master
   margin: 0 auto;
 }
 
@@ -56,7 +75,11 @@ h2 {
 
 header#top {
   padding: 50px 24px;
+<<<<<<< HEAD
   background: $bfgreen url("../images/bullfrog-header.png") no-repeat right center;
+=======
+  background: $froggreen url("../images/bullfrog-header.png") no-repeat right center;
+>>>>>>> upstream/master
   margin-bottom: 48px;
   .logo a {
     font-size: 72px;
@@ -75,11 +98,19 @@ article {
   line-height: 27px;
   h1 {
     font-size: 36px;
+<<<<<<< HEAD
     color: $bfgreen;
     margin: 24px 0;
   }
   p {
     font-family: $bfsans;
+=======
+    color: $froggreen;
+    margin: 24px 0;
+  }
+  p {
+    font-family: $frogsans;
+>>>>>>> upstream/master
   }
 }
 
@@ -87,21 +118,36 @@ section.content-center,
 section.content-right {
   @extend %quarter-col;
   a {
+<<<<<<< HEAD
     @include froglinks($bfgreen);
+=======
+    @include froglinks($froggreen);
+>>>>>>> upstream/master
   }
 }
 
 section.content-center {
   ul {
+<<<<<<< HEAD
     font-family: $bfsans;
     li {
       a {
         @include froglinks($bfgreen);
+=======
+    font-family: $frogsans;
+    li {
+      a {
+        @include froglinks($froggreen);
+>>>>>>> upstream/master
       }
     }
   }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 section.content-right {
   article {
     p {
@@ -117,7 +163,11 @@ section.content-right {
 
 footer {
   clear: both;
+<<<<<<< HEAD
   background: $bfblack;
+=======
+  background: $frogblack;
+>>>>>>> upstream/master
   padding: 20px;
   color: white;
 }
