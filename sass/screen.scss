@@ -12,10 +12,18 @@
 	background: $bfblack;
 }
 
-h1{
+#page {
+	max-width: 1225px;
+	margin: 0 auto;
+}
+article {
+	font-size: 16px;
+	line-height: 27px;
+	h1 {
 	font-size: 36px;
 	font-family: Georgia;
 	color: $bfgreen;
+	}
 }
 
 .article-title {
@@ -36,6 +44,9 @@ div nav span {
 		color: white;
 		text-decoration: none;
 		font-family: Georgia;
+		line-height: 40px;
+		font-size: 14px;
+		padding: 0 24px 0 24px;
 		&:hover {
 			text-decoration: underline;
 		}
@@ -59,18 +70,22 @@ div nav span {
 	}
 }
 
-#top {
-	background: $bfgreen;
+header#top {
+	background: $bfgreen url("../images/bullfrog-header.png") no-repeat right center;
 	width: 1225px;
 	height: 175px;
+	margin-bottom: 48px;
+}
+
+#content {
+	width: 578px;
+	float: left;
 }
 
 footer {
-	font-family: Abel;
-	width: 265px;
-	height: 40px;
-	position: absolute;
+	clear: both;
 	color: white;
-	background-color: $bfblack;
+	padding: 20px;
+	background: $bfblack;
 
 }
