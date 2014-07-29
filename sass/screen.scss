@@ -9,7 +9,26 @@
 @import "variables";
 
 .above-header {
-	background: #000000;
+	background: $bfblack;
+}
+
+h1{
+	font-size: 36px;
+	font-family: Georgia;
+	color: $bfgreen;
+}
+
+.article-title {
+	left: 25px;
+	top: 260px;
+}
+
+div nav span {
+	line-height: 40px;
+	height: 40px;
+	width: 80px;
+	padding-left: 15px;
+	font-weight: normal;
 }
 
 #main-nav {
@@ -25,6 +44,9 @@
 
 .logo {
 	a {
+		left: 20px;
+		top: 84px;
+		position: absolute;
 		color: white;
 		text-decoration: none;
 		&:hover {
@@ -33,11 +55,22 @@
 	font-size: 72px;
 	font-family: Georgia;
 	color: white;
+	
 	}
 }
 
 #top {
-	background: #668134;
+	background: $bfgreen;
 	width: 1225px;
 	height: 175px;
+}
+
+footer {
+	font-family: Abel;
+	width: 265px;
+	height: 40px;
+	position: absolute;
+	color: white;
+	background-color: $bfblack;
+
 }
