@@ -106,16 +106,14 @@ article {
     font-family: $frogsans;
   }
 }
-
-
-
+/*
 section.content-center,
 section.content-right {
   @extend %quarter-col;
   a {
     @include froglinks($froggreen);
   }
-}
+}*/
 
 section.content-center {
   ul {
@@ -139,6 +137,38 @@ section.content-right {
   h3 {
     @extend h2;
     margin-bottom: 12px;
+  }
+  a {
+    @include froglinks($froggreen);
+  }
+}
+
+.read-more {
+  @include froglinks($froggreen);
+}
+ 
+#related {
+  @extend %half-col;
+  display: inline-block;
+  margin-right: 100px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: $froggreen;
+  border: 1px solid $froggreen;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#featured {
+  @extend %half-col; 
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: $froggreen;
+  border: 1px solid $froggreen;
+  &:hover {
+    text-decoration: underline;
   }
 }
 
